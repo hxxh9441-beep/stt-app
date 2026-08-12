@@ -1,0 +1,80 @@
+{
+  "securityBadge": "Absolute privacy policy: We collect and store zero audio or text data (Zero-Data Retention)",
+  "hero": {
+    "badge": "Runs entirely on your device",
+    "title": "Speech → Text",
+    "subtitle": "Record your voice or upload a file and get the text instantly — processed 100% locally on your device. No internet, no uploads, no tracking.",
+    "sttBtn": "🎙️ Speech to Text"
+  },
+  "sticky": {
+    "home": "Home",
+    "stt": "Speech → Text"
+  },
+  "stt": {
+    "title": "Speech to Text",
+    "subtitle": "Record your voice or upload a file — processed 100% on-device via the Whisper engine.",
+    "record": "🎙️ Start Recording",
+    "stop": "⏹️ Stop",
+    "recording": "Recording...",
+    "resultPlaceholder": "Transcribed text will appear here...",
+    "clear": "Clear",
+    "copy": "Copy",
+    "copied": "Copied ✓",
+    "error": "Something went wrong — check microphone permission",
+    "noEngine": "Preparing speech engine...",
+    "dropTitle": "Drop an audio file here",
+    "dropHint": "or click to browse — MP3 / WAV / M4A / WebM · up to 10 min or 25MB",
+    "browse": "📂 Browse Files",
+    "fileSelected": "File selected",
+    "durationLabel": "Duration",
+    "sizeLabel": "Size",
+    "languageLabel": "Detected language",
+    "engineLoading": "Connecting to service...",
+    "engineDownloading": "Preparing the recognition service — first time only...",
+    "engineReady": "Recognition service connected & ready ✅",
+    "engineError": "Service unavailable right now",
+    "engineNotice": "Running in compatibility mode — same quality",
+    "modelCached": "Model saved locally — runs offline ⚡",
+    "transcribing": "Analyzing audio signal...",
+    "chunkProgress": "Processing segment {index} of {total}",
+    "segmentsTitle": "Timestamps",
+    "exportTxt": "Export TXT",
+    "exportSrt": "Export SRT",
+    "waveformLabel": "Waveform",
+    "audioTooBig": "File exceeds {maxMb}MB ({sizeMb}MB) — longer files are auto-chunked",
+    "audioTooLong": "Duration exceeds {maxSec}s ({durationSec}s) — longer files are auto-chunked",
+    "audioInvalid": "Could not read audio file — check the format",
+    "fallbackNotice": "Standard Processing activated automatically — same quality"
+  },
+  "engine": {
+    "label": "Service Status",
+    "loading": "Connecting to service...",
+    "ready": "Service connected & ready ✅",
+    "error": "Service unavailable ❌",
+    "modelsCached": "Model weights saved — ready to work offline",
+    "modelsPending": "Models will load on first use (one time only)",
+    "modeLabel": "Engine Mode",
+    "modeAuto": "🔄 Smart Auto",
+    "modeWebGPU": "⚡ Ultra Processing",
+    "modeWasm": "🛡️ Standard Processing",
+    "modeAutoTitle": "Smart Auto — automatically picks the best for your device",
+    "modeWebGPUTitle": "Ultra Processing — fastest",
+    "modeWasmTitle": "Standard Processing — maximum stability",
+    "webgpuDisabledHint": "Currently unavailable on this environment — Standard Processing has been activated for maximum stability.",
+    "modeActive": "Active",
+    "modeActiveTurbo": "Ultra ⚡",
+    "modeActiveStandard": "Standard 🛡️",
+    "modeChanged": "Switched to {mode}",
+    "modeChecking": "Checking device capabilities...",
+    "modeAutoHint": "Smart Auto — picked {mode} for your device",
+    "modeWebGPUHintActive": "Ultra Processing active — fastest on your device",
+    "modeWasmHintActive": "Standard Processing active — maximum stability",
+    "modeStandardNotice": "Standard Processing — same quality"
+  },
+  "lang": {
+    "toggleTitle": "Interface language — Arabic or English"
+  },
+  "toast": {
+    "exported": "Exported ✓"
+  }
+}

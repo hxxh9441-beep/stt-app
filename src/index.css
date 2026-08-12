@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+/* ===== الثيم الداكن (SaaS) ===== */
+@theme {
+  --color-surface: #0b1020;
+  --color-surface-2: #111831;
+  --color-surface-3: #1a2340;
+  --color-line: rgba(148, 163, 184, 0.14);
+  --color-accent: #6d7cff;
+  --color-accent-2: #22d3ee;
+  --color-text-main: #e8edf7;
+  --color-text-dim: #93a1bd;
+  --font-sans: "Segoe UI", "SF Arabic", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(1200px 600px at 50% -10%, #1a2340 0%, #0b1020 55%, #070b16 100%);
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: rgba(109, 124, 255, 0.35);
+}
+
+/* شريط تمرير داكن */
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1020;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a3557;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3a4770;
+}
+
+/* زجاجية عامة */
+.glass {
+  background: rgba(17, 24, 49, 0.65);
+  border: 1px solid var(--color-line);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* توهج خلفي خفيف للعناصر الرئيسية */
+.glow-ring {
+  box-shadow: 0 0 0 1px rgba(109, 124, 255, 0.25), 0 10px 40px -12px rgba(109, 124, 255, 0.35);
+}
+
+/* ===== حركات مخصصة ===== */
+
+/* دخول الإشعارات (Toast) — من الأسفل مع تلاشٍ خفيف */
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+.animate-toast-in {
+  animation: toast-in 0.28s cubic-bezier(0.21, 1.02, 0.73, 1) both;
+}
+
+/* انزلاق شريط التقدم غير المحدد (indeterminate) */
+@keyframes loading-slide {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(320%);
+  }
+}
+.animate-loading-slide {
+  animation: loading-slide 1.4s ease-in-out infinite;
+}
