@@ -1,0 +1,25 @@
+# الاعتماديات
+node_modules/
+
+# مخرجات البناء
+dist/
+dist-ssr/
+
+# نظام التشغيل
+.DS_Store
+
+# السجلات
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# المتغيرات المحلية (مفاتيح API)
+.env
+.env.local
+.env.*.local
+
+# محررات
+.vscode/*
+!.vscode/extensions.json
+.idea/
