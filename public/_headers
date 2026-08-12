@@ -1,0 +1,22 @@
+# ===== Cloudflare Pages: الترويسات المطلوبة =====
+# Cross-Origin-Isolation تفعّل WebGPU كامل + SharedArrayBuffer (المعالجة المحلية)
+# وتُطبَّق تلقائياً عند رفع مجلد dist إلى Cloudflare Pages
+
+/*
+  Cross-Origin-Opener-Policy: same-origin
+  Cross-Origin-Embedder-Policy: require-corp
+  Access-Control-Allow-Origin: *
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
+# ملفات الأصول المبندلة — كاش طويل الأمد (اسم الملف يحتوي الهاش)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# ملفات النماذج الثابتة — كاش معقول
+/onnx/*
+  Cache-Control: public, max-age=86400
+/piper/*
+  Cache-Control: public, max-age=86400
+/worker/*
+  Cache-Control: public, max-age=86400
