@@ -1,0 +1,30 @@
+{
+  "name": "stt-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "تفريغ الصوت إلى نص (STT Only) — Whisper عبر WebGPU/WASM، محلي 100% وبلا أي بيانات تخرج من الجهاز.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && npm run postbuild",
+    "postbuild": "node -e \"require('fs').copyFileSync('dist/index.html','dist/404.html')\"",
+    "lint": "oxlint",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "^4.2.0",
+    "i18next": "^23.11.5",
+    "lucide-react": "^0.460.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-i18next": "^15.0.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.0.0",
+    "@vitejs/plugin-react": "^4.3.2",
+    "oxlint": "^1.0.0",
+    "tailwindcss": "^4.0.0",
+    "vite": "^6.0.0",
+    "vite-plugin-pwa": "^0.21.0"
+  }
+}
